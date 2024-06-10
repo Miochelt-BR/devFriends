@@ -7,7 +7,13 @@
 ## Olá, somos o devfriends!
 
 
-Eu sou um desenvolvedores  full stack apaixonados por tecnologia e pela nossa integração juntos . Aqui está um pouco sobre nós :
+desenvolvedores  full stack apaixonados por tecnologia e pela nossa integração juntos . Aqui está um pouco sobre nós :
+
+Construindo Interfaces Dinâmicas: Uma Jornada Prática com JavaScript e DOM
+Este repositório contém cinco projetos práticos que demonstram a manipulação do DOM com JavaScript.
+Objetivo:
+Desenvolver habilidades essenciais para a construção de interfaces web dinâmicas e interativas, explorando as funcionalidades do JavaScript para manipular o DOM (Document Object Model).
+
 
 - 💻 Desenvolvedor Full Stack em Java
   - 🌟 Sempre aprendendo novas tecnologias
