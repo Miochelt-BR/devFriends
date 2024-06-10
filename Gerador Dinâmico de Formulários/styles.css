@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Pacifico&display=swap');
+
+
+h1 {
+    font-family: "Pacifico", cursive;
+    color: #340a0b; 
+}
+
+
+body {
+    font-family: "Dosis", sans-serif;
+    background: rgb(129,21,34);
+background: linear-gradient(90deg, rgba(129,21,34,1) 0%, rgba(252,191,250,1) 35%, rgba(83,68,43,1) 100%);
+
+}
+
+/* Define as cores para as classes */
+.color1 {
+    background-color: #e8c382; /* Cor para .color1 */
+}
+
+.color2 {
+    background-color: #b39d69; /* Cor para .color2 */
+}
+
+.color3 {
+    background-color: #a86b4c; /* Cor para .color3 */
+}
+
+.color4 {
+    background-color: #7d1a0c; /* Cor para .color4 */
+}
+
+.color5 {
+    background-color: #340a0b; /* Cor para .color5 */
+}
+
+
+#form-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Dosis", sans-serif;
+}
+
+#dynamic-form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4c5e91;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: "Dosis", sans-serif;
+    font-family: "Dosis", sans-serif;
+}
+
+button:hover {
+    background-color: #3b4971;
+}
