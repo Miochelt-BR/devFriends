@@ -23,7 +23,7 @@ Eu sou um desenvolvedores  full stack apaixonados por tecnologia e pela nossa in
 
 
 
-## Que a Força esteja com você!
+## estamos juntos !
 
-![Jedi](https://th.bing.com/th/id/OIP.LeZBpB7LQTRjZapwD9SpIAHaE8?w=240&h=181&c=7&r=0&o=5&pid=1.7)
+![hacks](https://th.bing.com/th/id/OIP.Cwz17_4OoLBps-SI3JsPdAHaE8?w=272&h=181&c=7&r=0&o=5&pid=1.7)
 
