@@ -1,0 +1,109 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Espera a página carregar completamente antes de executar o código.
+
+    const cart = [];
+    // Cria um array vazio chamado 'cart' para armazenar os itens do carrinho.
+
+    const cartItemsContainer = document.getElementById('cartItems');
+    // Seleciona o elemento HTML com o id 'cartItems' para poder adicionar os itens do carrinho nele.
+
+    const totalPriceElement = document.getElementById('totalPrice');
+    // Seleciona o elemento HTML com o id 'totalPrice' para mostrar o preço total.
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        // Seleciona todos os botões que têm a classe 'add-to-cart' e adiciona um evento de clique a cada um.
+
+        button.addEventListener('click', (event) => {
+            // Quando o botão é clicado, esta função é executada.
+
+            const id = event.target.dataset.id;
+            // Pega o id do produto a partir do botão clicado.
+
+            const name = event.target.dataset.name;
+            // Pega o nome do produto a partir do botão clicado.
+
+            const price = parseFloat(event.target.dataset.price);
+            // Pega o preço do produto a partir do botão clicado e converte para número.
+
+            const existingItem = cart.find(item => item.id === id);
+            // Verifica se o produto já está no carrinho, procurando pelo id.
+
+            if (existingItem) {
+                // Se o produto já está no carrinho, aumenta a quantidade dele em 1.
+                existingItem.quantity += 1;
+            } else {
+                // Se o produto não está no carrinho, adiciona ele ao carrinho com quantidade 1.
+                cart.push({ id, name, price, quantity: 1 });
+            }
+
+            updateCart();
+            // Atualiza o carrinho para mostrar os itens e o preço total.
+        });
+    });
+
+    function updateCart() {
+        // Função para atualizar a visualização do carrinho.
+
+        cartItemsContainer.innerHTML = '';
+        // Limpa o conteúdo do elemento 'cartItemsContainer' para mostrar a lista atualizada.
+
+        let total = 0;
+        // Cria uma variável para armazenar o preço total.
+
+        cart.forEach(item => {
+            // Para cada item no carrinho, faz o seguinte:
+
+            total += item.price * item.quantity;
+            // Adiciona o preço do item multiplicado pela quantidade ao total.
+
+            const li = document.createElement('li');
+            // Cria um novo elemento de lista (li) para o item do carrinho.
+
+            li.textContent = `${item.name} - R$ ${item.price.toFixed(2)} x ${item.quantity}`;
+            // Define o texto do item da lista com o nome do produto, preço e quantidade.
+
+            const removeButton = document.createElement('button');
+            // Cria um botão para remover o item do carrinho.
+
+            removeButton.textContent = 'Remover';
+            // Define o texto do botão de remover como 'Remover'.
+
+            removeButton.addEventListener('click', () => {
+                // Quando o botão de remover é clicado, esta função é executada.
+                removeFromCart(item.id);
+                // Remove o item do carrinho com o id correspondente.
+            });
+
+            li.appendChild(removeButton);
+            // Adiciona o botão de remover ao item da lista.
+
+            cartItemsContainer.appendChild(li);
+            // Adiciona o item da lista (li) ao contêiner do carrinho.
+        });
+
+        totalPriceElement.textContent = `Total: R$ ${total.toFixed(2)}`;
+        // Atualiza o texto do preço total no elemento 'totalPriceElement'.
+    }
+
+    function removeFromCart(id) {
+        // Função para remover ou diminuir a quantidade de um item no carrinho.
+
+        const itemIndex = cart.findIndex(item => item.id === id);
+        // Encontra o índice do item no carrinho pelo id.
+
+        if (itemIndex > -1) {
+            // Se o item é encontrado no carrinho:
+
+            cart[itemIndex].quantity -= 1;
+            // Diminui a quantidade do item em 1.
+
+            if (cart[itemIndex].quantity === 0) {
+                // Se a quantidade do item chegar a 0, remove o item do carrinho.
+                cart.splice(itemIndex, 1);
+            }
+        }
+
+        updateCart();
+        // Atualiza o carrinho para mostrar a lista atualizada e o preço total.
+    }
+});

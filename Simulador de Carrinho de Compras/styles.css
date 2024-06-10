@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Sacramento&display=swap');
+
+
+h1 {
+    font-family: "Sacramento", cursive;
+    color: #4e395d; 
+    text-align: center;
+}
+
+
+body {
+    font-family: "Red Hat Text", sans-serif;
+    background-color: #8ebe94; 
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #ccfc8e; 
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease; 
+}
+
+button:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); 
+}
+
+
+#produtos {
+    display: flex;
+    justify-content: center;
+}
+
+.produto {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ccfc8e; 
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.produto h2 {
+    margin-bottom: 10px;
+}
+
+
+#carrinho {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ccfc8e; 
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#carrinho h2 {
+    margin-bottom: 20px;
+}
+
+#lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#lista-carrinho li button {
+    background-color: #4e395d; 
+    color: #fff;
+}
