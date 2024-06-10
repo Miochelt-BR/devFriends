@@ -1,6 +1,7 @@
 # devFriends
 # 🌌 Bem-vindo ao nosso Trabalho!
-![Avatar](C:\Users\Thiago\Desktop\aula.jpg)
+![Avatar](![aula](https://github.com/Miochelt-BR/devFriends/assets/93685091/4e28c200-fc41-4fcd-9f64-1fd42a29b87c)
+)
 
 ## Olá, eu sou Thiago michel ariça!
 
