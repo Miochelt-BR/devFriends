@@ -5,7 +5,7 @@ Objetivo:
 Desenvolver habilidades essenciais para a construção de interfaces web dinâmicas e interativas, explorando as funcionalidades do JavaScript para manipular o DOM (Document Object Model).
 Conteúdo:
 Este repositório apresenta cinco projetos distintos, cada um com foco em diferentes aspectos da manipulação do DOM:
-Projeto 1: [To- do -List] - Descrição breve do projeto e suas funcionalidades.
+Projeto 1: [Nome do projeto] - Descrição breve do projeto e suas funcionalidades.
 Projeto 2: [Nome do projeto] - Descrição breve do projeto e suas funcionalidades.
 Projeto 3: [Nome do projeto] - Descrição breve do projeto e suas funcionalidades.
 Projeto 4: [Nome do projeto] - Descrição breve do projeto e suas funcionalidades.
@@ -28,3 +28,30 @@ Melhorar os projetos existentes.
 Corrigir erros.
 Criar documentação.
 Comece a construir interfaces web dinâmicas hoje mesmo! 🚀
+Cores Azuis:
+Título principal: #007bff (Azul claro)
+Subtítulos: #0056b3 (Azul médio)
+Texto principal: #333 (Cinza escuro, contraste com o azul)
+Links: #007bff (Azul claro)
+Destaques: #0056b3 (Azul médio)
+Você pode utilizar estas cores em um arquivo CSS separado para estilizar o README.md.
+Exemplo CSS:
+h1 {
+  color: #007bff; /* Azul claro para o título principal */
+}
+
+h2, h3 {
+  color: #0056b3; /* Azul médio para subtítulos */
+}
+
+p, li {
+  color: #333; /* Cinza escuro para texto principal */
+}
+
+a {
+  color: #007bff; /* Azul claro para links */
+}
+
+.destaque {
+  color: #0056b3; /* Azul médio para elementos destacados */
+}
